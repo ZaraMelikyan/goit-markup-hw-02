@@ -23,10 +23,11 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;    
+    line-height: 1.19; 
+    letter-spacing: 0.03em;
     text-decoration: none;    
     color: var(--acsent-text-color)
-  }
+  } 
 
 .logo-part {
     color: #000000;
@@ -36,9 +37,8 @@ body {
     color: var(--primary-white-color);
 }
 
-/* menu nav */
-.page-nav-list a {
-  font-style: normal;
+/* header nav */
+.nav-item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;  
@@ -50,14 +50,12 @@ body {
     color: var(--acsent-text-color);
 }
 
-
 .nav:hover,
 .nav:focus {
     color: var(--acsent-text-color); 
 }
 
-.tel-mail a {
-font-style: normal;
+.tel-mail-item {
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
@@ -69,7 +67,6 @@ text-decoration: none;
 
 .footer-address {
     font-style: normal;
-    font-weight: 400;
     line-height: 1.71;
     color: var(--primary-white-color);
     text-decoration: none;
@@ -77,13 +74,13 @@ text-decoration: none;
     
 .footer-info {
     font-style: normal;
-    font-weight: 400;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     }
 
 /*hero*/
+
 .footer,
 .hero {
     background-color: var(--secondary-background-color);
@@ -100,12 +97,10 @@ color: var(--primary-white-color);
 }
 
 .hero-btn {
-font-style: normal;
+font-family: 'Roboto';
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-display: flex;
-align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 color: var(--primary-white-color);
@@ -113,56 +108,60 @@ background-color: var(--acsent-text-color);
 cursor: pointer;
 }
 
-
-
-.hero-btn:hover {
-    color: var(--primary-text-color)
-}
-
 /* privilege */
 
-.privilage-head {
-    visibility: hidden; 
+.visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .privilege-title {
-line-height: 1.14;
-text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
 }
 
-.privilege-text {
-line-height: 1.71;
-color: var(--secondary-text-color);
+.privilege-text {        
+    line-height: 1.71;
+    color: var(--secondary-text-color);
 }
+
 
 /* Our Work */
+.team-title,
 .work-title {    
 font-size: 36px;
 line-height: 1.17;
+letter-spacing: 0.03em;
 text-align: center;
 }
-
 
 /* Our Team */
 .team {
     background-color: #F5F4FA;
 }
 
-.team-title {
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-}
-
 .team-caption {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;    
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 .team-text {
 font-size: 16px;
 line-height: 1.19;
+letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
 
@@ -170,8 +169,7 @@ color: var(--secondary-text-color);
 
 /* filter */
 
-.filter button {
-font-style: normal;
+.filter-btn {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
@@ -181,8 +179,9 @@ background: #F5F4FA;
 cursor: pointer;
 }
 
-.filter button:hover,
-.filter button:focus {  
+.filter-btn.current,
+.filter-btn:hover,
+.filter-btn:focus {  
         color: var(--primary-white-color);
         background: var(--acsent-text-color);
 }
@@ -190,15 +189,26 @@ cursor: pointer;
 
 /* gallery */
 
-.gallery p {    
-        font-size: 16px;
-        line-height: 1.88;           
-        color: var(--secondary-text-color);
+.gallery-list {
+    text-decoration: none;
 }
 
-.gallery h2 {    
-        font-size: 18px;
-        line-height: 2;   
-        letter-spacing: 0.06em;    
-        color: var(--primary-text-color);
+.gallery-titel {   
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;   
+    letter-spacing: 0.06em;    
+    color: var(--primary-text-color);
 }
+
+ .gallery-item {    
+        font-size: 16px;
+        line-height: 1.88;           
+        color: var(--secondary-text-color); 
+        text-decoration: none;       
+      }
+
+
+ 
+  
+
